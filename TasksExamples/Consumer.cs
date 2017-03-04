@@ -97,10 +97,11 @@ namespace TasksExamples
                 }
                 lock (this)
                 {
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("------ Consumer #" + ID + "------");
                     it--; //Consumo
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Cantidad de Items ====> " + it);
-                    
                     Thread.Sleep(Speed);
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Consumer process " + ID + " has consumed " + (ConsumedItems+1) + " items.");                                

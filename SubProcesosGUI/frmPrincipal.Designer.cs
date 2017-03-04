@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCr3 = new System.Windows.Forms.Label();
+            this.lblCr2 = new System.Windows.Forms.Label();
+            this.lblCr1 = new System.Windows.Forms.Label();
             this.pbCorredor3 = new System.Windows.Forms.ProgressBar();
             this.pbCorredor2 = new System.Windows.Forms.ProgressBar();
             this.pbCorredor1 = new System.Windows.Forms.ProgressBar();
@@ -36,9 +39,6 @@
             this.lblC2 = new System.Windows.Forms.Label();
             this.lblC1 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
-            this.lblCr1 = new System.Windows.Forms.Label();
-            this.lblCr2 = new System.Windows.Forms.Label();
-            this.lblCr3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(492, 151);
             this.panel1.TabIndex = 0;
+            // 
+            // lblCr3
+            // 
+            this.lblCr3.AutoSize = true;
+            this.lblCr3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCr3.Location = new System.Drawing.Point(442, 112);
+            this.lblCr3.Name = "lblCr3";
+            this.lblCr3.Size = new System.Drawing.Size(33, 21);
+            this.lblCr3.TabIndex = 8;
+            this.lblCr3.Text = "0%";
+            // 
+            // lblCr2
+            // 
+            this.lblCr2.AutoSize = true;
+            this.lblCr2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCr2.Location = new System.Drawing.Point(442, 62);
+            this.lblCr2.Name = "lblCr2";
+            this.lblCr2.Size = new System.Drawing.Size(33, 21);
+            this.lblCr2.TabIndex = 7;
+            this.lblCr2.Text = "0%";
+            // 
+            // lblCr1
+            // 
+            this.lblCr1.AutoSize = true;
+            this.lblCr1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCr1.Location = new System.Drawing.Point(442, 12);
+            this.lblCr1.Name = "lblCr1";
+            this.lblCr1.Size = new System.Drawing.Size(33, 21);
+            this.lblCr1.TabIndex = 6;
+            this.lblCr1.Text = "0%";
             // 
             // pbCorredor3
             // 
@@ -122,36 +152,6 @@
             this.btnStart.Text = "Iniciar";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // lblCr1
-            // 
-            this.lblCr1.AutoSize = true;
-            this.lblCr1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCr1.Location = new System.Drawing.Point(442, 12);
-            this.lblCr1.Name = "lblCr1";
-            this.lblCr1.Size = new System.Drawing.Size(32, 21);
-            this.lblCr1.TabIndex = 6;
-            this.lblCr1.Text = "0%";
-            // 
-            // lblCr2
-            // 
-            this.lblCr2.AutoSize = true;
-            this.lblCr2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCr2.Location = new System.Drawing.Point(442, 62);
-            this.lblCr2.Name = "lblCr2";
-            this.lblCr2.Size = new System.Drawing.Size(32, 21);
-            this.lblCr2.TabIndex = 7;
-            this.lblCr2.Text = "0%";
-            // 
-            // lblCr3
-            // 
-            this.lblCr3.AutoSize = true;
-            this.lblCr3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCr3.Location = new System.Drawing.Point(442, 112);
-            this.lblCr3.Name = "lblCr3";
-            this.lblCr3.Size = new System.Drawing.Size(32, 21);
-            this.lblCr3.TabIndex = 8;
-            this.lblCr3.Text = "0%";
             // 
             // frmPrincipal
             // 

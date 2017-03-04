@@ -77,8 +77,8 @@ namespace SubProcesosGUI
 
             this.BeginInvoke(new MethodInvoker(delegate
             {
-                pbCorredor3.Value = cr3.Estado.Value;
-                lblCr3.Text = cr3.Estado.Value + "%";
+                pbCorredor3.Value = cr3.Avance.Value;
+                lblCr3.Text = cr3.Avance.Value + "%";
             }));
         }
 
@@ -91,8 +91,8 @@ namespace SubProcesosGUI
              */
             this.BeginInvoke(new MethodInvoker(delegate
             {
-                pbCorredor2.Value = cr2.Estado.Value;
-                lblCr2.Text = cr2.Estado.Value + "%";
+                pbCorredor2.Value = cr2.Avance.Value;
+                lblCr2.Text = cr2.Avance.Value + "%";
             }));            
         }
 
@@ -105,8 +105,8 @@ namespace SubProcesosGUI
              */
             this.BeginInvoke(new MethodInvoker(delegate
             {
-                pbCorredor1.Value = cr1.Estado.Value;
-                lblCr1.Text = cr1.Estado.Value + "%";
+                pbCorredor1.Value = cr1.Avance.Value;
+                lblCr1.Text = cr1.Avance.Value + "%";
             }));            
         }
 
@@ -123,7 +123,7 @@ namespace SubProcesosGUI
                 corredor1.Start();
                 corredor2.Start();
                 corredor3.Start();
-
+                
                 btnStart.Text = "Detener";
                 _simRunning = true;
             }

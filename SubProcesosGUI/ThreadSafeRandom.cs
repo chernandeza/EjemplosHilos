@@ -10,7 +10,7 @@ namespace SubProcesosGUI
     /// Esta clase implementa uso seguro de números aleatorios en distintos hilos.
     /// Los generadores de números aleatorios presentan problemas cuando se utilizan un mismo
     /// generador de números en distintos hilos, causando que todos los hilos reciban el mismo número
-    /// aelatorio. Con esta clase se evita el problema.
+    /// aleatorio. Con esta clase se evita el problema.
     /// </summary>
     public class ThreadSafeRandom
     {

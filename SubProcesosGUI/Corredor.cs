@@ -13,7 +13,7 @@ namespace SubProcesosGUI
         /// <summary>
         /// Controla el avance del corredor
         /// </summary>
-        public EasyCounter Estado
+        public EasyCounter Avance
         {
             get { return _status; }
             set { _status = value; }
@@ -39,7 +39,7 @@ namespace SubProcesosGUI
         /// </summary>
         public Corredor()
         {
-            Estado = new EasyCounter();
+            Avance = new EasyCounter();
             Running = true;
         }
 
@@ -49,18 +49,18 @@ namespace SubProcesosGUI
         /// <param name="ct">Token de cancelación para los subprocesos</param>
         public void Correr(CancellationToken ct)
         {
-            while (Estado.Value < 100 && Running)
+            while (Avance.Value < 100 && Running)
             {
                 //Verifica si la tarea aún no ha sido cancelada
                 if (!ct.IsCancellationRequested)
                 {
                     //Aumenta el contador
-                    Estado.Count();
+                    Avance.Count();
                     ThreadSafeRandom rnd = new ThreadSafeRandom();
                     //Simula que los corredores no corran todos al mismo ritmo
-                    Thread.Sleep(750 + rnd.Next(500));
                     //Se lanza el evento indicando que el valor de Estado.Value ha cambiado
-                    ValueChanged(this, EventArgs.Empty); 
+                    ValueChanged(this, EventArgs.Empty);
+                    Thread.Sleep(750 + rnd.Next(500));                    
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace SubProcesosGUI
                     break;
                 }
             }
-            if (Estado.Value == 100)
+            if (Avance.Value == 100)
             {
                 //Se alcanzó el máximo, el corredor gana la carrera
                 MaxReached(this, EventArgs.Empty);
